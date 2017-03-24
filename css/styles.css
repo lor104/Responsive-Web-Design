@@ -255,7 +255,7 @@ figure {
         display: block;
     }
 
-    .movie-poster:nth-child(2n){
+    .movie-poster:nth-child(3n+1){
         clear: both;
     }
 
@@ -271,19 +271,33 @@ figure {
     footer {
         clear: both;
     }
-    /*poster image tag {
-        set float left
-        set width 1/3
-    }
 
-    poster image parent tag {
-        set overflow to auto
-    }
+            .movie:first-of-type {
+                position: relative;
+                left: 70px;
+                width: 100%;
+            }
 
-    IF images aren't lining up, or there's extra white space involved:
-    poster image tag:nth-child (specific n increment selector) {
-        clear both, or just left
-    }*/
-}
+            .movie:first-of-type .movie-backdrop {
+                display: block;
+                width: 100%;
+            }
+
+            .movie:first-of-type .movie-overview {
+                display: block;
+            }
+
+            .movie:first-of-type .movie-poster  {
+                display: none;
+            }
+/*
+            .movie-backdrop:first-of-type{
+                display: block;
+            }
+
+            .movie-image:first-of-type  {
+                overflow: auto;
+            }*/
+
 
 }
