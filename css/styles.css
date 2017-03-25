@@ -217,7 +217,7 @@ figure {
     .site-nav-item {
       clear: both;
       width: 100%;
-      margin-bottom: 10px;
+      height: 100%;
     }
 
     .site-nav-item > .fa {
@@ -226,6 +226,7 @@ figure {
 
     .site-nav-item-label {
         font-weight: bolder;
+        font-size: 10px;
     }
 
     .movie {
